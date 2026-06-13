@@ -1,92 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-          content="Indulge yourself with luxurious, long-lasting fragrance. Shop our collection of Eau de Parfums, Perfumes & Colognes">
+    <meta name="description" content="Indulge yourself with luxurious, long-lasting fragrance. Shop our collection of Eau de Parfums, Perfumes & Colognes">
     <meta name="keywords" content="perfume, fragrance, luxury scent, Parfum Enchante, perfume shop, enchanting perfume">
     <meta property="og:type" content="website">
     <meta property="og:url" content="parfumenchante.shop">
-    <meta property="og:title" content="Pardum Enchante - Captivating Perfumes">
-    <meta property="og:description"
-          content="Explore the enchanting world of perfumes at Pardum Enchante. Find the perfect fragrance to captivate your senses.">
+    <meta property="og:title" content="Parfum Enchanté - Captivating Perfumes">
+    <meta property="og:description" content="Explore the enchanting world of perfumes at Parfum Enchanté. Find the perfect fragrance to captivate your senses.">
     <meta property="og:image" content="assets/logo.png">
     <link rel="icon" href="assets/logo.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parfum Enchanté (Enchanted Perfume)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/fonts.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/fonts.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://kit.fontawesome.com/7973bb7bb3.js" crossorigin="anonymous"></script>
-
+    <script src="assets/navbar.js"></script>
+    <script src="assets/cart.js"></script>
     <script src="script.js"></script>
-
 </head>
 <body>
-<nav class="navbar navbar-expand-xl navbar-dark ">
-    <div class="container-fluid">
-        <a  title="Enchanted Perfume" class="navbar-brand logo-brand" href="index.html">
 
-            Parfum Enchanté
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
-                aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarBasic">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">Products </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="about-us.html" tabindex="-1" >About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact-us.html" tabindex="-1" >Contact Us</a>
-                </li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0xBja0oTe5Un_j-6i3m8iPoBaiqPbuZUI5HHgeCVbqh20bQ/viewform?pli=1&pli=1">
-                <div class="d-flex ">
-                    <button class="buy-now ">Shop Now!
-                        <svg width="40" height="20" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Line -->
-                            <line x1="5" y1="10" x2="35" y2="10" stroke="beige" stroke-width="2"/>
-                            <!-- Diamond -->
-                            <polygon points="35,6 38,10 35,14 32,10" fill="beige"/>
-                        </svg>
-                    </button>
-                </div>
-            </a>
 
-        </div>
-    </div>
-</nav>
 <div class="flex-container hero">
-    <div class="container ">
-        <h1 class=" hero-text">
-            Elegance in Every Drop, Confidence in Every Spray
+    <div class="container">
+        <p class="hero-eyebrow">— Luxury Fragrances</p>
+        <h1 class="hero-text">
+            Elegance<br>
+            <em>in every</em><br>
+            drop.
         </h1>
         <a href="#products">
-        <button class="hero-cta">
-            Discover Your Signature Scent!
-        </button></a>
+            <button class="hero-cta">Discover Your Scent</button>
+        </a>
+        <p class="hero-scroll-hint">Scroll to explore</p>
     </div>
     <div class="container d-flex perfume-container">
         <div class="image-slideshow">
             <img class="perfume-image active" src="assets/perfume-image/pinkperfume.jpg" alt="perfume-bottle">
         </div>
     </div>
-
-
 </div>
+
 <div class="marquee-section">
     <div class="marquee">
         <span class="marquee-text">Victoria Secret • </span>
@@ -95,8 +58,6 @@
         <span class="marquee-text">Tom Ford • </span>
         <span class="marquee-text">Chanel • </span>
         <span class="marquee-text">Burberry • </span>
-
-
     </div>
     <div class="marquee">
         <span class="marquee-text">Victoria Secret • </span>
@@ -107,289 +68,223 @@
         <span class="marquee-text">Burberry • </span>
     </div>
 </div>
+
 <section class="perfume-menu" id="products">
-    <h1 class="menu-heading">Our Perfumes</h1>
-
     <div class="container">
+        <div class="menu-heading-row">
+            <h1 class="menu-heading">Our Collection</h1>
+            <span class="menu-heading-count">15 fragrances</span>
+        </div>
+        <nav class="filter-nav" id="filterNav">
+            <button class="filter-tab active" data-filter="all">All <sup class="filter-tab-count">15</sup></button>
+            <button class="filter-tab" data-filter="unisex">Unisex <sup class="filter-tab-count">7</sup></button>
+            <button class="filter-tab" data-filter="female">Female <sup class="filter-tab-count">6</sup></button>
+            <button class="filter-tab" data-filter="male">Male <sup class="filter-tab-count">2</sup></button>
+            <div class="filter-indicator"></div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
 
-        <div class="row ml-3">
-            <!-- Button group -->
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn select-button active">
-                    <input
-                            class="select"
-                            type="radio"
-                            name="all"
-                            autocomplete="off"
-                            checked
-                    />
-                    All
-                </label>
-                <label class="btn select-button ">
-                    <input
-                            class="select"
-                            type="radio"
-                            name="unisex"
-                            autocomplete="off"
-
-                    />
-                    Unisex
-                </label>
-                <label class="btn select-button">
-                    <input
-                            class=" select"
-                            type="radio"
-                            name="female"
-
-                            autocomplete="off"
-                    />
-                    Female
-                </label>
-                <label class="btn select-button">
-                    <input
-                            class=" select"
-                            type="radio"
-                            name="male"
-                            autocomplete="off"
-                    />
-                    Male
-                </label>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <a href="perfume-pages/vanilla.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/vanilla.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/vanilla.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/vanilla.webp" alt="Vanilla Perfume">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Vanilla Perfume</h3>
-
-
+                                <p class="perfume-price">RM 45</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('vanilla')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/victoria-secret-bombshell.html"
-                       class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/victoria-secret-bombshell.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/bombshell.jpg" alt="Perfume Image 1">
+                            <img src="assets/perfume-image/bombshell.jpg" alt="Victoria's Secret Bombshell">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Victoria's Secret Bombshell</h3>
-
-
+                                <p class="perfume-price">RM 65</p>
                             </div>
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('bombshell')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/victoria-secret-scandalous.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/victoria-secret-scandalous.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/sweetscandalous.jpeg" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/sweetscandalous.jpeg" alt="Victoria's Secret Scandalous">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Victoria's Secret Scandalous</h3>
-
-
+                                <p class="perfume-price">RM 60</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('scandalous')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/Coco-chanel.html"
-                       class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/Coco-chanel.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/chanel.webp" alt="Perfume Image 2">
+                            <img src="assets/perfume-image/chanel.webp" alt="COCO Chanel">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">COCO Chanel</h3>
-
-
+                                <p class="perfume-price">RM 85</p>
                             </div>
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('coco-chanel')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/lancome-la-vie-est-belle.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/lancome-la-vie-est-belle.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/la vie est belle.jpg" alt="Perfume Image 3">
+                            <img src="assets/perfume-image/la vie est belle.jpg" alt="Lancôme La Vie Est Belle">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Lancôme La Vie Est Belle</h3>
-
-
+                                <p class="perfume-price">RM 80</p>
                             </div>
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('la-vie')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/the-body-shop-strawberry.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/the-body-shop-strawberry.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/strawberry.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/strawberry.webp" alt="The Body Shop Strawberry">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">The Body Shop Strawberry</h3>
-
-
+                                <p class="perfume-price">RM 45</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('strawberry')">Add to Cart</button>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="perfume-pages/the-body-shop-white-musk.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/the-body-shop-white-musk.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/white musk.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/white musk.webp" alt="The Body Shop White Musk">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">The Body Shop White Musk</h3>
-
-
+                                <p class="perfume-price">RM 50</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('white-musk')">Add to Cart</button>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="perfume-pages/the-body-apple-blossom.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/the-body-apple-blossom.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/appleblossom.jpeg" alt="Perfume Image 5">
+                            <img src="assets/perfume-image/appleblossom.jpeg" alt="The Body Shop Apple Blossom">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">The Body Shop Apple Blossom</h3>
-
-
+                                <p class="perfume-price">RM 45</p>
                             </div>
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('apple-blossom')">Add to Cart</button>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="perfume-pages/burberry-hero.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item male">
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item male" data-href="perfume-pages/burberry-hero.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/burberryhero.png" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/burberryhero.png" alt="Burberry Hero">
                             <div class="perfume-text">
-                                <h3 class="perfume-name"> Burberry Hero</h3>
-
-
+                                <h3 class="perfume-name">Burberry Hero</h3>
+                                <p class="perfume-price">RM 90</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('burberry-hero')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/tom-ford-ombre-leather.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item male">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item male" data-href="perfume-pages/tom-ford-ombre-leather.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/tomfordleather.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/tomfordleather.webp" alt="Tom Ford Ombre Leather">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Tom Ford Ombre Leather</h3>
-
+                                <p class="perfume-price">RM 110</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('tom-ford')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/the-body-shop-cherry-blossom.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/the-body-shop-cherry-blossom.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/japaneseblossom.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/japaneseblossom.webp" alt="The Body Shop Cherry Blossom">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">The Body Shop Cherry Blossom</h3>
-
-
+                                <p class="perfume-price">RM 45</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('cherry-blossom')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/honeydew.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/honeydew.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/honeydew.jpeg" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/honeydew.jpeg" alt="Honeydew Perfume">
                             <div class="perfume-text">
-                                <h3 class="perfume-name"> Honeydew Perfume</h3>
-
-
+                                <h3 class="perfume-name">Honeydew Perfume</h3>
+                                <p class="perfume-price">RM 40</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('honeydew')">Add to Cart</button>
                         </div>
-                    </a>
+                    </div>
 
-
-                    <a href="perfume-pages/victoria-secret-aqua-kiss.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/victoria-secret-aqua-kiss.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/aquakiss.jpeg" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/aquakiss.jpeg" alt="Victoria's Secret Aqua Kiss">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Victoria's Secret Aqua Kiss</h3>
-
-
+                                <p class="perfume-price">RM 60</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('aqua-kiss')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/victoria-secret-velvet-petals.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item female" data-href="perfume-pages/victoria-secret-velvet-petals.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/velvetpetals.jpg" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/velvetpetals.jpg" alt="Victoria Secret Velvet Petals">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Victoria Secret Velvet Petals</h3>
-
-
+                                <p class="perfume-price">RM 65</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('velvet-petals')">Add to Cart</button>
                         </div>
-                    </a>
-                    <a href="perfume-pages/victoria-secret-jasmine-dream.html" class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex">
+                    </div>
+
+                    <div class="perfume-item-container col-6 col-md-3 col-lg-3 my-2 item unisex" data-href="perfume-pages/victoria-secret-jasmine-dream.html">
                         <div class="perfume-item">
-                            <img src="assets/perfume-image/jasminedream.webp" alt="Perfume Image 6">
+                            <img src="assets/perfume-image/jasminedream.webp" alt="Victoria Secret Jasmine Dream">
                             <div class="perfume-text">
                                 <h3 class="perfume-name">Victoria Secret Jasmine Dream</h3>
-
-
+                                <p class="perfume-price">RM 60</p>
                             </div>
-
+                            <button class="add-to-cart-btn" onclick="event.stopPropagation();Cart.add('jasmine-dream')">Add to Cart</button>
                         </div>
-                    </a>
+                    </div>
 
                 </div>
-            </div>
         </div>
-    </div>
 </section>
 
-<footer class="text-white">
-    <div class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="p-3 d-flex ">
-                    <img src="https://parfumenchante.shop/assets/logo-transparent.png" alt="logo Parfum Enchante"
-                         class=" logo-footer">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div>
-                    <h5 class="row quick-title">NAVIGATION</h5>
-                    <a class="row quick-links" href="index.html">Home</a>
-                    <a class="row quick-links" href="/about">About Us</a>
-                    <a class="row quick-links" href="#products">Products</a>
-                    <a class="row quick-links" href="/contact">Contact</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row social-media">
-                    <h5 class="row quick-title">FOLLOW US</h5>
-                    <!-- Move the Facebook logo before the title -->
-                    <a class="row quick-links" href="https://www.facebook.com/profile.php?id=61553468661346"
-                       target="_blank" rel="noopener noreferrer">
-                        Facebook
-                    </a>
-                    <a class="row quick-links" href="https://www.instagram.com/parfume_enchante/" target="_blank"
-                       rel="noopener noreferrer">
-                        Instagram
-                    </a>
-                    <!-- Add similar links for other social media platforms -->
-                </div>
-            </div>
-
-            <div class="col-md-3">
-
-                <h5 class="row quick-title">MESSAGE US</h5>
-                <a class="row quick-links" href="https://wa.me/60183289742" target="_blank" rel="noopener noreferrer">
-                    +60183289742 (Putri - Allamanda)
-                </a>
-                <a class="row quick-links" href="https://wa.me/601121869277" target="_blank" rel="noopener noreferrer">
-                    +601121869277 (Aza - Kenanga)
-                </a>
-                <a class="row quick-links" href="https://wa.me/60199544159" target="_blank" rel="noopener noreferrer">
-                    +60199544159 (Syifa - Sakura)
-                </a>
-                <!-- Add your newsletter form or content here -->
-            </div>
-
+<footer class="site-footer">
+    <div class="footer-brand-row">
+        <p class="footer-tagline">The art of scent, crafted for you.</p>
+        <h2 class="footer-brand">Parfum Enchanté</h2>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-columns">
+        <div class="footer-col">
+            <p class="footer-col-title">Navigation</p>
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="about-us.html">About Us</a>
+            <a class="footer-link" href="index.html#products">Products</a>
+            <a class="footer-link" href="contact-us.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Follow Us</p>
+            <a class="footer-link" href="https://www.facebook.com/profile.php?id=61553468661346" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="footer-link" href="https://www.instagram.com/parfume_enchante/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Message Us</p>
+            <a class="footer-link" href="https://wa.me/60183289742" target="_blank" rel="noopener noreferrer">+60183289742 — Putri</a>
+            <a class="footer-link" href="https://wa.me/601121869277" target="_blank" rel="noopener noreferrer">+601121869277 — Aza</a>
+            <a class="footer-link" href="https://wa.me/60199544159" target="_blank" rel="noopener noreferrer">+60199544159 — Syifa</a>
         </div>
     </div>
-
-    <div class="text-center py-3">
-        &copy; 2023 Parfum Enchante (Enchanted Perfume). All rights reserved.
+    <div class="footer-bottom">
+        <span>&copy; 2024 Parfum Enchanté. All rights reserved.</span>
     </div>
 </footer>
-
-
 
 </body>
 </html>

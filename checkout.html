@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — Parfum Enchanté</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/cart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand logo-brand" href="index.html">Parfum Enchanté</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
+                aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="checkout-page">
+    <h1 class="checkout-heading">Checkout</h1>
+
+    <div id="checkoutEmpty" class="checkout-empty-state" style="display:none">
+        <p>Your cart is empty.</p>
+        <a href="index.html">← Browse Perfumes</a>
+    </div>
+
+    <div id="checkoutContent">
+        <div class="checkout-grid">
+            <!-- Left: Form -->
+            <div>
+                <form class="checkout-form" id="checkoutForm" onsubmit="submitOrder(event)">
+                    <p class="checkout-section-title">Customer Details</p>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+60 12 345 6789" required>
+                        </div>
+                    </div>
+
+                    <p class="checkout-section-title" style="margin-top:32px">Shipping Address</p>
+                    <div class="form-group">
+                        <label>Street Address</label>
+                        <input type="text" placeholder="Block, floor, room no." required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="Kuala Lumpur" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Postcode</label>
+                            <input type="text" placeholder="50000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <select required>
+                            <option value="" disabled selected>Select state</option>
+                            <option>Selangor</option>
+                            <option>Kuala Lumpur</option>
+                            <option>Johor</option>
+                            <option>Penang</option>
+                            <option>Perak</option>
+                            <option>Kedah</option>
+                            <option>Kelantan</option>
+                            <option>Terengganu</option>
+                            <option>Pahang</option>
+                            <option>Negeri Sembilan</option>
+                            <option>Melaka</option>
+                            <option>Sabah</option>
+                            <option>Sarawak</option>
+                            <option>Perlis</option>
+                        </select>
+                    </div>
+
+                    <p class="checkout-section-title" style="margin-top:32px">Shipping Method</p>
+                    <div class="payment-options" id="shippingOptions">
+                        <div class="payment-option active" onclick="selectOption(this, 'shippingOptions')">
+                            <input type="radio" name="shipping" value="standard" checked>
+                            <label>Standard Delivery (3–5 days) — <strong style="color:#e8dacd">RM 5</strong></label>
+                        </div>
+                        <div class="payment-option" onclick="selectOption(this, 'shippingOptions')">
+                            <input type="radio" name="shipping" value="express">
+                            <label>Express Delivery (1–2 days) — <strong style="color:#e8dacd">RM 12</strong></label>
+                        </div>
+                    </div>
+
+                    <p class="checkout-section-title" style="margin-top:32px">Payment Method</p>
+                    <div class="payment-options" id="paymentOptions">
+                        <div class="payment-option active" onclick="selectOption(this, 'paymentOptions')">
+                            <input type="radio" name="payment" value="cod" checked>
+                            <label>Cash on Delivery</label>
+                        </div>
+                        <div class="payment-option" onclick="selectOption(this, 'paymentOptions')">
+                            <input type="radio" name="payment" value="online">
+                            <label>Online Banking (FPX)</label>
+                        </div>
+                        <div class="payment-option" onclick="selectOption(this, 'paymentOptions')">
+                            <input type="radio" name="payment" value="ewallet">
+                            <label>E-Wallet (Touch 'n Go / Grab Pay)</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="place-order-btn">Place Order</button>
+                </form>
+            </div>
+
+            <!-- Right: Order Summary -->
+            <div>
+                <div class="order-summary-card">
+                    <p class="checkout-section-title">Order Summary</p>
+                    <div class="order-summary-items" id="orderSummaryItems"></div>
+                    <hr class="order-divider">
+                    <div class="order-row"><span>Subtotal</span><span id="orderSubtotal">RM 0</span></div>
+                    <div class="order-row"><span>Shipping</span><span id="orderShipping">RM 5</span></div>
+                    <div class="order-total-row"><span>Total</span><span id="orderTotal">RM 0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success state -->
+    <div class="order-success" id="orderSuccess">
+        <div class="order-success-icon">✦</div>
+        <h2>Order Placed!</h2>
+        <p>Thank you for your order.<br>Our team will contact you via WhatsApp to confirm delivery details.</p>
+        <a href="index.html">Continue Shopping</a>
+    </div>
+</div>
+
+<footer class="text-white">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="p-3 d-flex">
+                    <img src="https://parfumenchante.shop/assets/logo-transparent.png" alt="logo" class="logo-footer">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="row quick-title">NAVIGATION</h5>
+                <a class="row quick-links" href="index.html">Home</a>
+                <a class="row quick-links" href="about-us.html">About Us</a>
+                <a class="row quick-links" href="index.html#products">Products</a>
+                <a class="row quick-links" href="contact-us.html">Contact</a>
+            </div>
+            <div class="col-md-3">
+                <h5 class="row quick-title">FOLLOW US</h5>
+                <a class="row quick-links" href="https://www.facebook.com/profile.php?id=61553468661346" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a class="row quick-links" href="https://www.instagram.com/parfume_enchante/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <div class="col-md-3">
+                <h5 class="row quick-title">MESSAGE US</h5>
+                <a class="row quick-links" href="https://wa.me/60183289742" target="_blank" rel="noopener noreferrer">+60183289742 (Putri)</a>
+                <a class="row quick-links" href="https://wa.me/601121869277" target="_blank" rel="noopener noreferrer">+601121869277 (Aza)</a>
+                <a class="row quick-links" href="https://wa.me/60199544159" target="_blank" rel="noopener noreferrer">+60199544159 (Syifa)</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3">&copy; 2023 Parfum Enchante. All rights reserved.</div>
+</footer>
+
+<script>
+(function () {
+    var SHIPPING = { standard: 5, express: 12 };
+    var items = JSON.parse(localStorage.getItem('pe_cart') || '[]');
+
+    function getShipping() {
+        var sel = document.querySelector('input[name="shipping"]:checked');
+        return sel ? (SHIPPING[sel.value] || 5) : 5;
+    }
+
+    function render() {
+        var summaryEl = document.getElementById('orderSummaryItems');
+        var subtotalEl = document.getElementById('orderSubtotal');
+        var shippingEl = document.getElementById('orderShipping');
+        var totalEl = document.getElementById('orderTotal');
+
+        if (!items.length) {
+            document.getElementById('checkoutContent').style.display = 'none';
+            document.getElementById('checkoutEmpty').style.display = 'block';
+            return;
+        }
+
+        summaryEl.innerHTML = items.map(function (item) {
+            return '<div class="order-summary-item">' +
+                '<div class="order-item-details">' +
+                    '<p class="order-item-name">' + item.name + '</p>' +
+                    '<p class="order-item-qty">× ' + item.qty + '</p>' +
+                '</div>' +
+                '<span class="order-item-price">RM ' + (item.price * item.qty) + '</span>' +
+            '</div>';
+        }).join('');
+
+        var subtotal = items.reduce(function (s, i) { return s + i.price * i.qty; }, 0);
+        var shipping = getShipping();
+        subtotalEl.textContent = 'RM ' + subtotal;
+        shippingEl.textContent = 'RM ' + shipping;
+        totalEl.textContent = 'RM ' + (subtotal + shipping);
+    }
+
+    render();
+
+    // Update totals when shipping changes
+    document.querySelectorAll('input[name="shipping"]').forEach(function (r) {
+        r.addEventListener('change', render);
+    });
+})();
+
+function selectOption(el, groupId) {
+    var group = document.getElementById(groupId);
+    group.querySelectorAll('.payment-option').forEach(function (o) { o.classList.remove('active'); });
+    el.classList.add('active');
+    var radio = el.querySelector('input[type="radio"]');
+    if (radio) radio.checked = true;
+
+    if (groupId === 'shippingOptions') {
+        var items = JSON.parse(localStorage.getItem('pe_cart') || '[]');
+        var subtotal = items.reduce(function (s, i) { return s + i.price * i.qty; }, 0);
+        var shipping = radio && radio.value === 'express' ? 12 : 5;
+        document.getElementById('orderShipping').textContent = 'RM ' + shipping;
+        document.getElementById('orderTotal').textContent = 'RM ' + (subtotal + shipping);
+    }
+}
+
+function submitOrder(e) {
+    e.preventDefault();
+    localStorage.removeItem('pe_cart');
+    document.getElementById('checkoutContent').style.display = 'none';
+    var success = document.getElementById('orderSuccess');
+    success.classList.add('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

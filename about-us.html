@@ -1,189 +1,147 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-          content="Indulge yourself with luxurious, long-lasting fragrance. Shop our collection of Eau de Parfums, Perfumes & Colognes">
+    <meta name="description" content="Indulge yourself with luxurious, long-lasting fragrance. Shop our collection of Eau de Parfums, Perfumes & Colognes">
     <meta name="keywords" content="perfume, fragrance, luxury scent, Parfum Enchante, perfume shop, enchanting perfume">
     <meta property="og:type" content="website">
     <meta property="og:url" content="parfumenchante.shop">
-    <meta property="og:title" content="Pardum Enchante - Captivating Perfumes">
-    <meta property="og:description"
-          content="Explore the enchanting world of perfumes at Pardum Enchante. Find the perfect fragrance to captivate your senses.">
+    <meta property="og:title" content="About Us — Parfum Enchanté">
+    <meta property="og:description" content="A group of students driven by one shared belief — that world-class fragrance should never be a privilege.">
     <meta property="og:image" content="assets/logo.png">
     <link rel="icon" href="assets/logo.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us — Parfum Enchanté</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/fonts.css">
-    <script src="https://kit.fontawesome.com/7973bb7bb3.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/navbar.js"></script>
+    <script src="assets/cart.js"></script>
     <script src="script.js"></script>
-    <script>
-        // JavaScript to add the class when the page loads
-        document.addEventListener("DOMContentLoaded", function () {
-            var aboutUsElement = document.querySelector(".about-us");
-            aboutUsElement.classList.add("show-about-us");
-        });
-    </script>
-
 </head>
 <body>
-<nav class="navbar navbar-expand-xl navbar-dark ">
-    <div class="container-fluid">
-        <a class="navbar-brand logo-brand" href="../index.html">
-            Parfum Enchanté
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
-                aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarBasic">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#products">Products </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="../about-us.html" tabindex="-1">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../contact-us.html" tabindex="-1">Contact Us</a>
-                </li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0xBja0oTe5Un_j-6i3m8iPoBaiqPbuZUI5HHgeCVbqh20bQ/viewform?pli=1&pli=1">
-                <div class="d-flex ">
-                    <button class="buy-now ">Shop Now!
-                        <svg width="40" height="20" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Line -->
-                            <line x1="5" y1="10" x2="35" y2="10" stroke="beige" stroke-width="2"/>
-                            <!-- Diamond -->
-                            <polygon points="35,6 38,10 35,14 32,10" fill="beige"/>
-                        </svg>
-                    </button>
-                </div>
-            </a>
 
-        </div>
+<!-- Hero -->
+<section class="about-hero">
+    <div class="about-hero-inner">
+        <p class="about-eyebrow">Our Story</p>
+        <h1 class="about-heading">Luxury for <em>everyone.</em></h1>
+        <p class="about-intro">A group of students driven by one shared belief — that world-class fragrance should never be a privilege.</p>
     </div>
-</nav>
-</body>
-<section>
-    <div class="  about-us container">
-        <h1>About Us</h1>
-        <p>We are a group of students driven by a shared passion: to deliver world-class luxury right to your
-            doorstep at an affordable price. Our journey began with an ambition to make premium quality accessible to
-            everyone. We delved into the world of perfumes, creating fragrances that aren't just scents, but symbols of
-            elegance and quality. Each bottle embodies our dedication to excellence, affordability, and sustainability.
-
-            <br><br>Our perfumes are crafted with precision, using only the finest ingredients to ensure they are
-            long-lasting and captivating. They are designed to accompany you throughout your day, whether in the
-            boardroom or at a social event, enhancing your presence and leaving a lasting impression. We believe that
-            luxury should be an accessible joy, not a rare privilege.
-
-            <br><br>Join us in redefining luxury. Our mission is to innovate and push boundaries, offering extraordinary
-            yet affordable scents. With our perfumes, express yourself, stand out, and captivate anyone near. Welcome to
-            a world where excellence is the standard, not just a choice.</p>
+    <div class="about-hero-media">
+        <img src="https://images.unsplash.com/photo-1544006593-1a0b9255782d?auto=format&fit=crop&w=1400&q=85" alt="Luxury perfume bottle">
     </div>
 </section>
-<section>
-    <div class="our-team container">
-        <h1 class="our-team-heading">Our Team</h1>
-        <div class="team-member-container">
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume(1).png">
-                <h4> Siti Az'zaharah Binti Zuhry</h4>
-            </div>
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume(2).png">
-                <h4> Nur Qyairul Syifaa Binti Ryzisyaini</h4>
-            </div>
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume(3).png">
-                <h4> Putri Naqibah Balqis Binti Zainol</h4>
-            </div>
 
-            <!-- Additional members for the 3 by 2 grid -->
-
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume(4).png">
-                <h4> Nur Ainainihanan Binti Rozman</h4>
-            </div>
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume.png">
-                <h4> Nur Afrina Hafni Binti Affandi</h4>
-            </div>
-            <div class="team-member-info">
-                <img src="assets/team-member-icon/perfume-bottle.png">
-                <h4> Adriana Safraa Binti Affandi</h4>
-            </div>
-        </div>
+<!-- Pillars -->
+<section class="about-pillars">
+    <div class="about-pillar">
+        <span class="about-pillar-num">01</span>
+        <h3 class="about-pillar-title">Accessible Luxury</h3>
+        <p class="about-pillar-text">Premium-grade fragrances at prices that don't require compromise.</p>
+    </div>
+    <div class="about-pillar">
+        <span class="about-pillar-num">02</span>
+        <h3 class="about-pillar-title">Crafted Quality</h3>
+        <p class="about-pillar-text">Only the finest ingredients, ensuring every scent is long-lasting and captivating.</p>
+    </div>
+    <div class="about-pillar">
+        <span class="about-pillar-num">03</span>
+        <h3 class="about-pillar-title">Thoughtful Impact</h3>
+        <p class="about-pillar-text">Sustainability woven into every decision — from sourcing to packaging.</p>
     </div>
 </section>
-<footer class="text-white">
-    <div class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="p-3 d-flex ">
-                    <img src="https://parfumenchante.shop/assets/logo-transparent.png" alt="logo Parfum Enchante"
-                         class=" logo-footer">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div>
-                    <h5 class="row quick-title">NAVIGATION</h5>
-                    <a class="row quick-links" href="index.html">Home</a>
-                    <a class="row quick-links" href="/about">About Us</a>
-                    <a class="row quick-links" href="#products">Products</a>
-                    <a class="row quick-links" href="/contact">Contact</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row social-media">
-                    <h5 class="row quick-title">FOLLOW US</h5>
-                    <!-- Move the Facebook logo before the title -->
-                    <a class="row quick-links" href="https://www.facebook.com/profile.php?id=61553468661346"
-                       target="_blank" rel="noopener noreferrer">
-                        Facebook
-                    </a>
-                    <a class="row quick-links" href="https://www.instagram.com/parfume_enchante/" target="_blank"
-                       rel="noopener noreferrer">
-                        Instagram
-                    </a>
-                    <!-- Add similar links for other social media platforms -->
-                </div>
-            </div>
 
-            <div class="col-md-3">
+<!-- Story -->
+<section class="about-story">
+    <p class="about-story-label">Who we are</p>
+    <div class="about-story-body">
+        <p class="about-story-text">Our journey began with an ambition to make premium quality accessible to everyone. We delved into the world of perfumes, creating fragrances that aren't just scents, but symbols of elegance and quality. Each bottle embodies our dedication to excellence, affordability, and sustainability.</p>
+        <p class="about-story-text">Our perfumes are crafted with precision, using only the finest ingredients to ensure they are long-lasting and captivating — designed to accompany you throughout your day, enhancing your presence and leaving a lasting impression. We believe that luxury should be an accessible joy, not a rare privilege.</p>
+    </div>
+</section>
 
-                <h5 class="row quick-title">MESSAGE US</h5>
-                <a class="row quick-links" href="https://wa.me/60183289742" target="_blank" rel="noopener noreferrer">
-                    +60183289742 (Putri - Allamanda)
-                </a>
-                <a class="row quick-links" href="https://wa.me/601121869277" target="_blank" rel="noopener noreferrer">
-                    +601121869277 (Aza - Kenanga)
-                </a>
-                <a class="row quick-links" href="https://wa.me/60199544159" target="_blank" rel="noopener noreferrer">
-                    +60199544159 (Syifa - Sakura)
-                </a>
-                <!-- Add your newsletter form or content here -->
-            </div>
+<!-- Full-bleed image break -->
+<div class="about-image-break">
+    <img src="https://images.unsplash.com/photo-1629694242280-20637c63285b?auto=format&fit=crop&w=1920&q=85" alt="Dark rose">
+</div>
 
+<!-- Team -->
+<section class="about-team">
+    <div class="about-team-header">
+        <p class="about-eyebrow">The People Behind the Scent</p>
+        <h2 class="about-team-heading">Our Team</h2>
+    </div>
+    <ul class="about-team-list">
+        <li class="about-team-item">
+            <span class="about-team-index">01</span>
+            <span class="about-team-name">Siti Az'zaharah Binti Zuhry</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+        <li class="about-team-item">
+            <span class="about-team-index">02</span>
+            <span class="about-team-name">Nur Qyairul Syifaa Binti Ryzisyaini</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+        <li class="about-team-item">
+            <span class="about-team-index">03</span>
+            <span class="about-team-name">Putri Naqibah Balqis Binti Zainol</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+        <li class="about-team-item">
+            <span class="about-team-index">04</span>
+            <span class="about-team-name">Nur Ainainihanan Binti Rozman</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+        <li class="about-team-item">
+            <span class="about-team-index">05</span>
+            <span class="about-team-name">Nur Afrina Hafni Binti Affandi</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+        <li class="about-team-item">
+            <span class="about-team-index">06</span>
+            <span class="about-team-name">Adriana Safraa Binti Affandi</span>
+            <span class="about-team-marker">✦</span>
+        </li>
+    </ul>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-brand-row">
+        <p class="footer-tagline">The art of scent, crafted for you.</p>
+        <h2 class="footer-brand">Parfum Enchanté</h2>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-columns">
+        <div class="footer-col">
+            <p class="footer-col-title">Navigation</p>
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="about-us.html">About Us</a>
+            <a class="footer-link" href="index.html#products">Products</a>
+            <a class="footer-link" href="contact-us.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Follow Us</p>
+            <a class="footer-link" href="https://www.facebook.com/profile.php?id=61553468661346" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="footer-link" href="https://www.instagram.com/parfume_enchante/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Message Us</p>
+            <a class="footer-link" href="https://wa.me/60183289742" target="_blank" rel="noopener noreferrer">+60183289742 — Putri</a>
+            <a class="footer-link" href="https://wa.me/601121869277" target="_blank" rel="noopener noreferrer">+601121869277 — Aza</a>
+            <a class="footer-link" href="https://wa.me/60199544159" target="_blank" rel="noopener noreferrer">+60199544159 — Syifa</a>
         </div>
     </div>
-
-    <div class="text-center py-3">
-        &copy; 2023 Parfum Enchante (Enchanted Perfume). All rights reserved.
+    <div class="footer-bottom">
+        <span>&copy; 2024 Parfum Enchanté. All rights reserved.</span>
     </div>
 </footer>
-
 </body>
 </html>
